@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>canva</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 10px;
+        background-color: #eee;
+        height: 100vh;
+      }
+      body::-webkit-scrollbar {
+        display: none;
+      }
+      .flex {
+        display: flex;
+      }
+      .coloum {
+        flex-direction: column;
+      }
+
+      .baiSe {
+        background-color: #fff;
+      }
+
+      /* * {
+        margin: 0;
+        padding: 0;
+        border: 1px solid black;
+      } */
+
+      .huiSe {
+        background-color: grey;
+      }
+
+      .flex1 {
+        flex: 1;
+      }
+
+      .martop8 {
+        margin-top: 8px;
+      }
+      /* 内容区域 */
+      .content {
+        border: 1px solid #bbb;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 2%;
+      }
+
+      /* banner区域 */
+      div img {
+        width: 100%; /* 图片宽度设置为100%，使其充满div的宽度 */
+        height: 100%; /* 图片高度设置为100%，使其充满div的高度 */
+        object-fit: cover; /* 保持图片的宽高比，并裁剪以适应div */
+      }
+
+      .icons {
+        flex-wrap: wrap; /* 允许子元素换行 */
+        justify-content: center; /* 水平居中对齐 */
+        gap: 30px; /* 子元素之间的间距 */
+        padding: 10px; /* 容器内边距，防止子元素紧贴容器边缘 */
+      }
+      .icons div {
+        width: 60px; /* 设置宽度 */
+        height: 60px; /* 设置高度，与宽度相同 */
+        background-color: #007bff; /* 背景颜色或其他背景样式 */
+        border-radius: 50%; /* 关键属性，使div变为圆形 */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      /* 设计区 */
+      .items {
+        flex-wrap: wrap; /* 允许子元素换行 */
+        justify-content: center; /* 水平居中对齐 */
+        gap: 15px; /* 子元素之间的间距 */
+        padding: 10px; /* 容器内边距，防止子元素紧贴容器边缘 */
+      }
+
+      .items div {
+        height: 200px;
+        width: 250px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      /* 头部区域 */
+      .header {
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+      }
+
+      /* 列表区域 */
+      .list div {
+        border-bottom: 1px solid #bbb;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <!-- 最左侧导航栏 -->
+    <div
+      class="nav flex coloum baiSe"
+      style="flex: 1; padding: 10px; border-right: 1px solid skyblue"
+    >
+      <div class="huiSe" style="height: 60px"></div>
+      <div class="huiSe" style="height: 60px; margin-top: 10px"></div>
+      <div class="huiSe" style="height: 60px; margin-top: 10px"></div>
+      <div class="huiSe" style="height: 60px; margin-top: 10px"></div>
+      <div class="huiSe" style="height: 60px; margin-top: 10px"></div>
+      <div class="huiSe" style="height: 60px; margin-top: 10px"></div>
+      <div class="huiSe" style="height: 60px; margin-top: 10px"></div>
+    </div>
+    <!-- 列表栏 -->
+    <div class="list flex coloum baiSe" style="flex: 3">
+      <div style="height: 60px; line-height: 60px; padding-left: 15px">
+        设计1
+      </div>
+      <div style="height: 60px; line-height: 60px; padding-left: 15px">
+        设计1
+      </div>
+      <div style="height: 60px; line-height: 60px; padding-left: 15px">
+        设计1
+      </div>
+      <div style="height: 60px; line-height: 60px; padding-left: 15px">
+        设计1
+      </div>
+      <div style="height: 60px; line-height: 60px; padding-left: 15px">
+        设计1
+      </div>
+      <div style="height: 60px; line-height: 60px; padding-left: 15px">
+        设计1
+      </div>
+
+      <div
+        style="
+          height: 60px;
+          line-height: 60px;
+          padding-left: 15px;
+          margin-top: auto;
+        "
+      >
+        设计1
+      </div>
+    </div>
+    <!-- 主要内容 -->
+    <div class="content flex coloum" style="flex: 15">
+      <!-- 头部区域 -->
+      <div class="header flex baiSe" style="height: 60px">
+        <!-- 搜索区域 -->
+        <div class="search">
+          <input
+            type="search"
+            name=""
+            id=""
+            placeholder="请搜索你的模板"
+            style="width: 400px; height: 40px; margin-left: 300px"
+          />
+        </div>
+        <!-- 右侧小组件 -->
+        <div
+          class="tips"
+          style="height: 40px; background-color: #007bff; width: 300px"
+        ></div>
+      </div>
+      <!-- 内容区域 -->
+      <div class="flex1 coloum main" style="overflow: auto">
+        <!-- banner区 -->
+        <div class="banner baiSe martop8" style="height: 200px">
+          <img src="imgs/banner.jpg" alt="" />
+        </div>
+        <!-- 小组件区域 -->
+        <div class="icons flex martop8">
+          <div class="flex"></div>
+          <div class="flex"></div>
+          <div class="flex"></div>
+          <div class="flex"></div>
+          <div class="flex"></div>
+          <div class="flex"></div>
+          <div class="flex"></div>
+          <div class="flex"></div>
+          <div class="flex"></div>
+        </div>
+        <!-- 设计区域 -->
+        <div class="items flex martop8">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
